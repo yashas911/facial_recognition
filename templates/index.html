@@ -12,11 +12,11 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-dark" style="background-color: #7a2048;">
+    <nav class="navbar navbar-dark" style="background-color: #FF7722;">
         <div class="container">
             <a href="/" class="navbar-brand">
             <img src="{% static 'logo.png' %}" alt="" width="60" height="40">
-            Face Analysis
+            Image Attendance
             </a>
 
         </div>
@@ -24,7 +24,7 @@
     <!-- body -->
     <div class="container">
         <br>
-        <h3 class="display-11" align="center">Facial Analysis</h3>
+        <h3 class="display-11" align="center">Welcome to Image Attendance</h3>
         <br>
 
         <form action="#" method="POST" enctype="multipart/form-data">
@@ -68,12 +68,7 @@
     
                     </thead>
                 
-                    <tr>
-                        <td>Face Detection Score</td>
-                        {% for detect_score in results.face_detect_score  %}
-                            <td>{{ detect_score }}</td>
-                        {% endfor %}
-                    </tr>
+
                     <tr>
                         <td>Name</td>
                         {% for name in results.face_name  %}
@@ -109,7 +104,7 @@
         <hr>
         <div class="container">
             <footer>
-                <a href="http://datascienceanywhere.com"> Data Science Anywhere</a>
+                <a href="https://www.shahandanchor.com/home/"> Facial Attendance Project</a>
             </footer>
 
         </div>
